@@ -1,0 +1,64 @@
+{
+    "manager": [
+        {
+            "id": 1,
+            "username": "manager01",
+            "password": "manager101"
+        }
+    ],
+    "tutors": [
+        {
+            "id": 1,
+            "managerId": 1,
+            "fullName": "Whitney To",
+            "userName": "whitney.t01",
+            "password": "wto010101",
+            "subjects": [
+                "Calculus",
+                "Algebra"
+            ]
+        },
+        {
+            "id": 2,
+            "managerId": 1,
+            "fullName": "Johnathan Browns",
+            "userName": "john.b01",
+            "password": "jtb010101",
+            "subjects": [
+                "English",
+                "French"
+            ]
+        }
+    ],
+    "students" : [
+        {
+            "id": 1,
+            "managerId": 1,
+            "fullName": "Bella Tuffs",
+            "userName": "bella.t01",
+            "password": "blt010101",
+            "tutorBy": [
+                {
+                    "2" : ["French"] 
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "managerId": 1,
+            "fullName": "Nathan Sheus",
+            "userName": "Nathan.s01",
+            "password": "nts010101",
+            "tutoringInfo": [
+                {
+                    "tutorId" : 1,
+                    "subjects" : ["Calculus"]
+                },
+                {
+                    "tutorId" : 2,
+                    "subjects" : ["English"]
+                }
+            ]
+        }
+    ]
+}
